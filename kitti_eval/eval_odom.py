@@ -22,7 +22,7 @@ eval_tool = KittiEvalOdom()
 gt_dir = "./kitti_eval/gt_poses/"
 result_dir = args.result
 
-continue_flag = input("Evaluate result in {}? [y/n]".format(result_dir))
+continue_flag = "y"#input("Evaluate result in {}? [y/n]".format(result_dir))
 if continue_flag == "y":
     eval_tool.eval(
         gt_dir,
