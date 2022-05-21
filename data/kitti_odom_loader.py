@@ -55,7 +55,7 @@ class KittiOdomLoader(object):
         img = imread(img_file)
         zoom_y = self.img_height/img.shape[0]
         zoom_x = self.img_width/img.shape[1]
-        img = scipy.misc.imresize(img, (self.img_height, self.img_width))
+        img = img.imresize (self.img_height, self.img_width)
         return img, zoom_x, zoom_y
 
     def read_calib_file(self, cid, filepath, zoom_x, zoom_y):
