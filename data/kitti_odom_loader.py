@@ -4,6 +4,7 @@ from path import Path
 import scipy.misc
 from collections import Counter
 import os
+from imageio import imread, imsave
 
 class KittiOdomLoader(object):
     def __init__(self,
@@ -51,7 +52,7 @@ class KittiOdomLoader(object):
         img_file = scene_data['dir']/'image_{}'.format(scene_data['cid'])/scene_data['frame_id'][tgt_idx]+'.png'
         if not img_file.isfile():
             return None
-        img = scipy.misc.imread(img_file)
+        img = imread(img_file)
         zoom_y = self.img_height/img.shape[0]
         zoom_x = self.img_width/img.shape[1]
         img = scipy.misc.imresize(img, (self.img_height, self.img_width))
