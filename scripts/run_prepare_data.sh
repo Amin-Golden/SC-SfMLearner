@@ -10,6 +10,6 @@
 # python data/prepare_train_data.py $DATASET --dataset-format 'cityscapes' --dump-root $TRAIN_SET --width 832 --height 342 --num-threads 4
 
 # for kitti odometry dataset
-DATASET=../input/kitti-odometry-woo
+DATASET=../../input/kitti-odometry-woo
 TRAIN_SET=/Dataset/kitti_vo_256/
 python data/prepare_train_data.py $DATASET --dataset-format 'kitti_odom' --dump-root $TRAIN_SET --width 832 --height 256 --num-threads 4
