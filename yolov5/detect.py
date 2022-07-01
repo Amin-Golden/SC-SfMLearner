@@ -24,10 +24,13 @@ import torch
 import torch.backends.cudnn as cudnn
 
 FILE = Path(__file__).resolve()
+print("file:",FILE)
 ROOT = FILE.parents[0]  # YOLOv5 root directory
+print("root:",ROOT)
 if str(ROOT) not in sys.path:
     sys.path.append(str(ROOT))  # add ROOT to PATH
 ROOT = Path(os.path.relpath(ROOT, Path.cwd()))  # relative
+print("root:",ROOT)
 
 from models.common import DetectMultiBackend
 from utils.datasets import IMG_FORMATS, VID_FORMATS, LoadImages, LoadStreams
