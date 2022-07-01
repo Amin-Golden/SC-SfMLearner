@@ -15,9 +15,10 @@ Usage:
 import argparse
 import os
 import sys
+sys.path.insert(0, os.getcwd() + '/yolov5')
+
 from pathlib import Path
 
-# sys.path.insert(0, os.getcwd() + '/yolov5')
 import cv2
 import torch
 import torch.backends.cudnn as cudnn
