@@ -1,8 +1,6 @@
 import torch
 
-# import os
-# import sys
-# sys.path.insert(0, os.getcwd() + '/yolov5')
+
 
 from imageio import imread, imsave
 from skimage.transform import resize as imresize
@@ -20,6 +18,9 @@ import models
 from utils import tensor2array
 
 import cv2
+import os
+import sys
+sys.path.insert(0, os.getcwd() + '/yolov5')
 
 from yolov5.detect import run
 
