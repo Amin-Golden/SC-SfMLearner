@@ -27,6 +27,7 @@ FILE = Path(__file__).resolve()
 print("file:",FILE)
 ROOT = FILE.parents[0]  # YOLOv5 root directory
 print("root:",ROOT)
+sys.path.insert(ROOT)
 if str(ROOT) not in sys.path:
     sys.path.append(str(ROOT))  # add ROOT to PATH
 ROOT = Path(os.path.relpath(ROOT, Path.cwd()))  # relative
