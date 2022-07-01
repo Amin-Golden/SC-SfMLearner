@@ -20,6 +20,7 @@ from utils import tensor2array
 import cv2
 import os
 import sys
+# Print(os.getcwd())
 # sys.path.insert(0, os.getcwd() + '/yolov5')
 
 from yolov5.detect import run
