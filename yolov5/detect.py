@@ -18,7 +18,7 @@ import sys
 import os
 import sys
 
-print(os.getcwd())
+print("getcwd: ",os.getcwd())
 sys.path.insert(0, os.getcwd() + '/yolov5')
 # sys.path.insert(0, os.getcwd() + '/yolov5/detect/')
 
